@@ -1,0 +1,51 @@
+/* Tipos não precisam de identificadores */
+
+body {
+  background-color: #f0f5f7;
+}
+
+table {
+  border-spacing: 0;
+  margin-left: auto;
+}
+
+/* Toda classe é identificada por um ponto (.) */
+.title {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.title .text {
+  font-size: 20pt;
+  color: #3f97b7;
+  font-family: "Roboto";
+  padding-left: 20px;
+}
+
+.gameboard {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.gameboard .square {
+  width: 150px;
+  height: 150px;
+  background-color: #b8e4f7;
+  cursor: pointer;
+}
+
+.gameboard .square.r-border {
+  border-right: 5px solid #3f97b7;
+}
+
+.gameboard .square.b-border {
+  border-bottom: 5px solid #3f97b7;
+}
+
+/* Todo id é identificado por um sustenido (#) */
