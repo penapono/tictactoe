@@ -1,48 +1,46 @@
-/* Tipos não precisam de identificadores */
+/* Elementos não precisam de identificadores (body, table)
+ * Toda classe é identificada por um ponto (.)
+ * Todo id é identificado por um sustenido (#) */
 
 body {
-  background-color: #f0f5f7;
+  background-image: url("imagem-fundo.png");
+  background-size: cover;
+  overflow: hidden;
 }
 
 table {
   border-spacing: 0;
-  margin-left: auto;
 }
 
-/* Toda classe é identificada por um ponto (.) */
-.title {
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 40px;
-}
-
-.title .text {
-  font-size: 20pt;
-  color: #3f97b7;
-  font-family: "Roboto";
-  padding-left: 20px;
-}
-
-.gameboard {
+.tabuleiro {
   position: relative;
   width: 450px;
   height: 450px;
-  margin: 0 auto;
+  margin: 18% auto;
 }
 
-.gameboard .square {
+.tabuleiro .cedula {
   width: 150px;
   height: 150px;
-  background-color: #b8e4f7;
   cursor: pointer;
 }
 
-.gameboard .square.r-border {
-  border-right: 5px solid #3f97b7;
+.tabuleiro .borda-dir {
+  border-right: 3px solid rgba(201, 10, 0, 0.6);
 }
 
-.gameboard .square.b-border {
-  border-bottom: 5px solid #3f97b7;
+.tabuleiro .borda-baixo {
+  border-bottom: 3px solid rgba(201, 10, 0, 0.6);
 }
 
-/* Todo id é identificado por um sustenido (#) */
+.x {
+  background-image: url("x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.o {
+  background-image: url("o.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
